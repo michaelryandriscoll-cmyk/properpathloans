@@ -29,7 +29,7 @@ async function getPostBySlug(slug) {
   if (!base) return null;
 
   const res = await fetch(
-    `${base}/wp/v2/posts?slug=${slug}&_fields=id,slug,title,content,excerpt,date,featured_media`,
+    `${base}/wp-json/wp/v2/posts?slug=${slug}&_fields=id,slug,title,content,excerpt,date,featured_media`,
     { next: { revalidate } }
   );
 
@@ -44,7 +44,7 @@ async function getMediaById(id) {
   if (!base || !id) return null;
 
   try {
-    const res = await fetch(`${base}/wp/v2/media/${id}`, { next: { revalidate } });
+    const res = await fetch(`${base}/wp-json/wp/v2/media/${id}`, { next: { revalidate } });
     if (!res.ok) return null;
     return await res.json();
   } catch {
@@ -66,7 +66,7 @@ async function getAllPostSlugs() {
   const base = process.env.NEXT_PUBLIC_WP_API_BASE;
   if (!base) return [];
 
-  const res = await fetch(`${base}/wp/v2/posts?per_page=100&_fields=slug`, {
+  const res = await fetch(`${base}/wp-json/wp/v2/posts?per_page=100&_fields=slug`, {
     next: { revalidate },
   });
 

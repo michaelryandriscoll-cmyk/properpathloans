@@ -32,7 +32,7 @@ async function getPostsPage1() {
     return { posts: [], totalPages: 1 };
   }
   const res = await fetch(
-    `${base}/wp/v2/posts?per_page=${POSTS_PER_PAGE}&page=1&_fields=id,slug,title,excerpt,date`,
+    `${base}/wp-json/wp/v2/posts?per_page=${POSTS_PER_PAGE}&page=1&_fields=id,slug,title,excerpt,date`,
     { next: { revalidate } }
   );
   if (!res.ok) {
