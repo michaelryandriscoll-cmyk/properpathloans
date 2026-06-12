@@ -11,49 +11,49 @@ const inter = Inter({
 });
 
 export const metadata = {
-  metadataBase: new URL("https://smallbusiness.capital"),
+  metadataBase: new URL("https://properpathloans.com"),
   title: {
-    default: "Small Business Loans & Fast Funding | Small Business Capital",
-    template: "%s | Small Business Capital",
+    default: "Personal Loans for Every Need | Proper Path Loans",
+    template: "%s | Proper Path Loans",
   },
   description:
-    "Get fast small business loans with flexible terms. Compare working capital, equipment financing, SBA loans, and lines of credit. Funding in as fast as 24–72 hours. Min credit score 580+.",
+    "Find personal loans for debt consolidation, emergencies, home improvement, and more. Compare rates from top lenders. Check your options with no impact to your credit score.",
   keywords: [
-    "small business loans",
-    "business funding",
-    "working capital loans",
-    "equipment financing",
-    "SBA loans",
-    "merchant cash advance",
-    "business line of credit",
-    "fast business loans",
-    "small business financing",
+    "personal loans",
+    "debt consolidation loans",
+    "bad credit personal loans",
+    "emergency loans",
+    "home improvement loans",
+    "personal loan rates",
+    "fast personal loans",
+    "online personal loans",
+    "personal loan comparison",
   ],
-  authors: [{ name: "Small Business Capital", url: "https://smallbusiness.capital" }],
-  creator: "Small Business Capital",
-  publisher: "Small Business Capital",
+  authors: [{ name: "Proper Path Loans", url: "https://properpathloans.com" }],
+  creator: "Proper Path Loans",
+  publisher: "Proper Path Loans",
   openGraph: {
     type: "website",
-    siteName: "Small Business Capital",
-    url: "https://smallbusiness.capital",
-    title: "Small Business Loans & Fast Funding | Small Business Capital",
+    siteName: "Proper Path Loans",
+    url: "https://properpathloans.com",
+    title: "Personal Loans for Every Need | Proper Path Loans",
     description:
-      "Compare small business loan options and get funded in as fast as 24–72 hours. Working capital, equipment financing, SBA loans, and more. One application, multiple offers.",
+      "Compare personal loan options from top lenders. Debt consolidation, emergency loans, home improvement, and more. Check your rate with no credit impact.",
     images: [
       {
         url: "/og-image-default.jpg",
         width: 1200,
         height: 630,
-        alt: "Small Business Capital — Fast Business Loans",
+        alt: "Proper Path Loans — Personal Loans Made Simple",
       },
     ],
     locale: "en_US",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Small Business Loans & Fast Funding | Small Business Capital",
+    title: "Personal Loans for Every Need | Proper Path Loans",
     description:
-      "Get fast small business loans with flexible terms. Funding in as fast as 24–72 hours. Min credit score 580+.",
+      "Find personal loans for debt consolidation, emergencies, home improvement, and more. No credit impact to check your rate.",
     images: ["/og-image-default.jpg"],
   },
   icons: {
@@ -65,39 +65,19 @@ export const metadata = {
     shortcut: "/favicon.ico",
   },
   robots: {
-    index: true,
-    follow: true,
-    googleBot: {
-      index: true,
-      follow: true,
-      "max-video-preview": -1,
-      "max-image-preview": "large",
-      "max-snippet": -1,
-    },
+    index: false,
+    follow: false,
   },
   alternates: {
-    canonical: "https://smallbusiness.capital",
+    canonical: "https://properpathloans.com",
   },
   category: "finance",
-  other: {
-    'impact-site-verification': '50d52bd6-6490-4838-9c05-aa93c83e6ea2',
-  },
 };
 
 export default function RootLayout({ children }) {
   return (
     <html lang="en" className={inter.variable}>
-      <head>
-        <link rel="stylesheet" href="/wp-css/wp-frontend.min.css" />
-        <script async src="https://www.googletagmanager.com/gtag/js?id=AW-18096733041"></script>
-        <script dangerouslySetInnerHTML={{ __html: `
-          window.dataLayer = window.dataLayer || [];
-          function gtag(){dataLayer.push(arguments);}
-            gtag('js', new Date());
-            gtag('config', 'AW-18096733041');
-        `}} />
-      </head>
-      <body className="sbc-body">
+      <body className="ppl-body">
         <LayoutShell>{children}</LayoutShell>
       </body>
     </html>

@@ -1,109 +1,52 @@
-// app/components/footer.js
 import Link from "next/link";
-import "@/app/styles/footer.css";
 
 export default function Footer() {
   return (
-    <footer className="sbc-footer">
-      <div className="sbc-footer__inner">
+    <footer className="ppl-footer">
+      <div className="ppl-container">
+        <div className="ppl-footer__grid">
 
-        {/* Top Section */}
-        <div className="sbc-footer__grid">
-
-          {/* Brand */}
-          <div className="sbc-footer__col">
-            <h4>Small Business Capital</h4>
-            <p>Fast results. Trusted funding for American businesses.</p>
-
-            <p className="sbc-footer__disclaimer">
-              Small Business Capital is not a lender. We connect small business owners
-              with third-party lenders and funding providers, including revenue-based
-              financing and merchant cash advance programs. Loan approval, terms, and
-              availability are determined solely by the lender.
+          <div className="ppl-footer__col">
+            <div className="ppl-footer__logo">Proper Path Loans</div>
+            <p className="ppl-footer__tagline">
+              Helping you find the right personal loan for your situation. Compare lenders, check your rate, and get funded fast.
             </p>
-
-            <a className="sbc-footer-phone" href="tel:18889008979">
-              (888) 900-8979
-            </a>
+            <p className="ppl-footer__phone">(888) 900-8979</p>
           </div>
 
-          {/* Loan Programs */}
-          <div className="sbc-footer__col">
-            <h4>Loan Programs</h4>
-            <ul>
-              <li>
-                <a href="/loan-programs/working-capital-loans">
-                  Working Capital
-                </a>
-              </li>
-              <li>
-                <a href="/loan-programs/equipment-financing">
-                  Equipment Financing
-                </a>
-              </li>
-              <li>
-                <a href="/loan-programs/business-line-of-credit">
-                  Business Line of Credit
-                </a>
-              </li>
-              <li>
-                <a href="/loan-programs/term-loans">
-                  Term Loans
-                </a>
-              </li>
-              <li>
-                <a href="/loan-programs/sba-loans">
-                  SBA Loans
-                </a>
-              </li>
-            </ul>
+          <div className="ppl-footer__col">
+            <div className="ppl-footer__heading">Loan Types</div>
+            <Link href="/personal-loans/texas/houston/debt-consolidation">Debt Consolidation</Link>
+            <Link href="/personal-loans/texas/houston/bad-credit">Bad Credit Loans</Link>
+            <Link href="/personal-loans/texas/houston/emergency-loans">Emergency Loans</Link>
+            <Link href="/personal-loans/texas/houston/home-improvement">Home Improvement</Link>
           </div>
 
-          {/* Company */}
-          <div className="sbc-footer__col">
-            <h4>Company</h4>
-            <ul>
-              <li>
-                <a href="/about-us">About</a>
-              </li>
-              <li>
-                <a href="/contact">Contact</a>
-              </li>
-              <li>
-                <a href="/privacy-policy">Privacy</a>
-              </li>
-              <li>
-                <a href="/terms-and-conditions">Terms</a>
-              </li>
-              <li>
-                <a href="/sms-terms-conditions">SMS Terms</a>
-              </li>
-              <li>
-                <a href="/blog">Blog</a>
-              </li>
-            </ul>
+          <div className="ppl-footer__col">
+            <div className="ppl-footer__heading">Browse by State</div>
+            <Link href="/personal-loans/texas">Texas</Link>
+            <Link href="/personal-loans/florida">Florida</Link>
+            <Link href="/personal-loans/california">California</Link>
+            <Link href="/personal-loans/new-york">New York</Link>
+            <Link href="/personal-loans">All States</Link>
           </div>
 
-          {/* CTA */}
-          <div className="sbc-footer__col">
-            <h4>Funding Speed</h4>
-            <p>
-              Funding in as fast as 24–72 hours.
-              <br />
-              One easy application.
-            </p>
-            <a className="sbc-footer-cta" href="/apply">
-              Apply Now
-            </a>
+          <div className="ppl-footer__col">
+            <div className="ppl-footer__heading">Company</div>
+            <Link href="/about">About</Link>
+            <Link href="/blog">Blog</Link>
+            <Link href="/privacy-policy">Privacy Policy</Link>
+            <Link href="/terms-and-conditions">Terms</Link>
           </div>
 
         </div>
 
-        {/* Bottom Bar */}
-        <div className="sbc-footer__bottom">
-          © {new Date().getFullYear()} Small Business Capital. All rights reserved.
+        <div className="ppl-footer__bottom">
+          <p className="ppl-footer__disclaimer">
+            Proper Path Loans is not a lender. We connect consumers with third-party lenders and financial service providers. Loan approval, terms, and availability are determined solely by the lender. Checking your rate does not affect your credit score. APR ranges vary by lender and creditworthiness.
+          </p>
+          <p className="ppl-footer__copy">© {new Date().getFullYear()} Proper Provider Companies LLC. All rights reserved.</p>
         </div>
-
       </div>
     </footer>
   );
