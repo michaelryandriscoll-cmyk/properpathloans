@@ -784,3 +784,183 @@
   .ppl-how-it-works .ppl-step__number { margin-left: 0; }
   .ppl-testimonial-grid { grid-template-columns: 1fr; }
 }
+
+/* ─── Legal Pages ─────────────────────────────────────── */
+.ppl-legal-page {
+  padding: 64px 0 96px;
+  background: var(--ppl-white);
+}
+
+.ppl-legal-page h1 {
+  font-size: clamp(28px, 4vw, 40px);
+  font-weight: 700;
+  color: var(--ppl-navy);
+  margin: 0 0 8px;
+}
+
+.ppl-legal-updated {
+  color: var(--ppl-text-muted);
+  font-size: 14px;
+  margin: 0 0 48px;
+}
+
+.ppl-legal-page h2 {
+  font-size: 20px;
+  font-weight: 700;
+  color: var(--ppl-navy);
+  margin: 40px 0 12px;
+}
+
+.ppl-legal-page p {
+  font-size: 15px;
+  color: var(--ppl-text);
+  line-height: 1.7;
+  margin: 0 0 16px;
+}
+
+.ppl-legal-page ul {
+  margin: 0 0 16px 24px;
+  padding: 0;
+}
+
+.ppl-legal-page ul li {
+  font-size: 15px;
+  color: var(--ppl-text);
+  line-height: 1.7;
+  margin-bottom: 6px;
+}
+
+/* ─── About Page ──────────────────────────────────────── */
+.ppl-about-content {
+  padding: 64px 0 96px;
+  background: var(--ppl-white);
+}
+
+.ppl-about-content h2 {
+  font-size: 22px;
+  font-weight: 700;
+  color: var(--ppl-navy);
+  margin: 48px 0 12px;
+}
+
+.ppl-about-content h2:first-child { margin-top: 0; }
+
+.ppl-about-content p {
+  font-size: 16px;
+  color: var(--ppl-text);
+  line-height: 1.7;
+  margin: 0 0 16px;
+}
+
+.ppl-about-content ul {
+  margin: 0 0 16px 24px;
+  padding: 0;
+}
+
+.ppl-about-content ul li {
+  font-size: 16px;
+  color: var(--ppl-text);
+  line-height: 1.7;
+  margin-bottom: 8px;
+}
+
+/* ─── Get Quote Page ──────────────────────────────────── */
+.ppl-quote-body {
+  padding: 64px 0 96px;
+  background: var(--ppl-bg);
+}
+
+.ppl-quote-form-card {
+  background: var(--ppl-white);
+  border: 1px solid var(--ppl-border);
+  border-radius: var(--ppl-radius-lg);
+  padding: 40px 40px;
+  box-shadow: var(--ppl-shadow-lg);
+  margin-bottom: 40px;
+}
+
+.ppl-quote-form-card h2 {
+  font-size: 24px;
+  font-weight: 700;
+  color: var(--ppl-navy);
+  margin: 0 0 8px;
+}
+
+.ppl-quote-form-card__sub {
+  color: var(--ppl-text-muted);
+  margin: 0 0 32px;
+  font-size: 15px;
+}
+
+.ppl-quote-placeholder {
+  text-align: center;
+  padding: 16px 0;
+}
+
+.ppl-quote-steps {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-bottom: 32px;
+  text-align: left;
+}
+
+.ppl-quote-step-item {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  font-size: 15px;
+  color: var(--ppl-text);
+}
+
+.ppl-quote-step-num {
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  background: var(--ppl-indigo);
+  color: white;
+  font-size: 13px;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.ppl-quote-coming {
+  color: var(--ppl-text-muted);
+  font-size: 14px;
+  margin: 0 0 20px;
+}
+
+.ppl-quote-trust {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.ppl-quote-trust-item {
+  background: var(--ppl-white);
+  border: 1px solid var(--ppl-border);
+  border-radius: var(--ppl-radius);
+  padding: 20px;
+}
+
+.ppl-quote-trust-item strong {
+  display: block;
+  font-size: 14px;
+  color: var(--ppl-navy);
+  margin-bottom: 6px;
+}
+
+.ppl-quote-trust-item p {
+  font-size: 13px;
+  color: var(--ppl-text-muted);
+  margin: 0;
+  line-height: 1.5;
+}
+
+@media (max-width: 768px) {
+  .ppl-quote-form-card { padding: 28px 20px; }
+  .ppl-quote-trust { grid-template-columns: 1fr; }
+}
