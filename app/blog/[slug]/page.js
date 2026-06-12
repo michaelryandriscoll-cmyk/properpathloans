@@ -96,10 +96,10 @@ export async function generateMetadata({ params }) {
   const title = stripHtml(post.title?.rendered || "Blog Post");
   const description =
     stripHtml(post.excerpt?.rendered || "").slice(0, 155) ||
-    "Read the latest business funding insights from Small Business Capital.";
+    "Personal loan tips, debt payoff strategies, and financial guidance from Proper Path Loans.";
 
   return {
-    title: `${title} | Small Business Capital`,
+    title: `${title} | Proper Path Loans`,
     description,
     alternates: {
       canonical: `/blog/${post.slug}`,
@@ -145,12 +145,12 @@ export default async function BlogPostPage({ params }) {
     dateModified: dateISO,
     author: {
       "@type": "Organization",
-      name: "Small Business Capital",
+      name: "Proper Path Loans",
       url: "https://smallbusiness.capital",
     },
     publisher: {
       "@type": "Organization",
-      name: "Small Business Capital",
+      name: "Proper Path Loans",
       url: "https://smallbusiness.capital",
     },
     mainEntityOfPage: {

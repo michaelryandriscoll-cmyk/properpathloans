@@ -45,7 +45,7 @@ async function getPostsPage1() {
 
 export async function generateMetadata() {
   return {
-    title: "Blog | Small Business Capital",
+    title: "Personal Finance Blog | Proper Path Loans",
     description:
       "Business funding insights, loan program guides, and approval tips for small business owners.",
     alternates: {
@@ -61,7 +61,7 @@ export default async function BlogIndexPage() {
       <div className="blog-container">
         <header className="blog-hero">
           <h1>Blog</h1>
-          <p>Funding insights, lender tips, and business growth strategies.</p>
+          <p>Personal loan tips, debt payoff strategies, and financial guidance.</p>
         </header>
         {posts.length === 0 ? (
           <div className="loan-card" style={{ padding: "22px", textAlign: "center" }}>
