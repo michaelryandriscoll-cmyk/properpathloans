@@ -606,3 +606,181 @@
 @media (max-width: 480px) {
   .ppl-footer__grid { grid-template-columns: 1fr; }
 }
+
+/* ─── Homepage ────────────────────────────────────────── */
+.ppl-hero--home {
+  padding: 96px 0 80px;
+}
+
+.ppl-hero__eyebrow {
+  display: inline-block;
+  font-size: 13px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--ppl-indigo-light);
+  background: rgba(91,79,207,0.25);
+  padding: 6px 14px;
+  border-radius: 20px;
+  margin-bottom: 20px;
+}
+
+.ppl-hero__actions {
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+  margin-top: 8px;
+}
+
+.ppl-btn--light {
+  border-color: rgba(255,255,255,0.5);
+  color: var(--ppl-white);
+}
+
+.ppl-btn--light:hover {
+  background: rgba(255,255,255,0.1);
+  border-color: var(--ppl-white);
+}
+
+/* How It Works */
+.ppl-how-it-works {
+  background: var(--ppl-bg);
+  padding: 80px 0;
+  text-align: center;
+}
+
+.ppl-steps {
+  display: flex;
+  align-items: flex-start;
+  gap: 0;
+  margin: 48px 0 48px;
+}
+
+.ppl-step {
+  flex: 1;
+  padding: 0 24px;
+}
+
+.ppl-step__number {
+  width: 52px;
+  height: 52px;
+  border-radius: 50%;
+  background: var(--ppl-indigo);
+  color: var(--ppl-white);
+  font-size: 20px;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 20px;
+}
+
+.ppl-step__title {
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--ppl-navy);
+  margin: 0 0 10px;
+}
+
+.ppl-step__desc {
+  font-size: 14px;
+  color: var(--ppl-text-muted);
+  line-height: 1.6;
+  margin: 0;
+}
+
+.ppl-step__divider {
+  font-size: 24px;
+  color: var(--ppl-border);
+  padding-top: 14px;
+  flex-shrink: 0;
+}
+
+.ppl-how-cta {
+  margin-top: 8px;
+}
+
+/* Testimonials */
+.ppl-testimonials {
+  background: var(--ppl-white);
+  padding: 80px 0;
+}
+
+.ppl-testimonial-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 24px;
+  margin-top: 8px;
+}
+
+.ppl-testimonial-card {
+  background: var(--ppl-bg);
+  border: 1px solid var(--ppl-border);
+  border-radius: var(--ppl-radius-lg);
+  padding: 28px 24px;
+}
+
+.ppl-testimonial-card__type {
+  font-size: 11px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--ppl-indigo);
+  margin-bottom: 14px;
+}
+
+.ppl-testimonial-card__quote {
+  font-size: 15px;
+  color: var(--ppl-text);
+  line-height: 1.7;
+  margin: 0 0 16px;
+  font-style: italic;
+}
+
+.ppl-testimonial-card__author {
+  font-size: 13px;
+  color: var(--ppl-text-muted);
+}
+
+/* Featured Cities */
+.ppl-featured-cities {
+  background: var(--ppl-bg);
+  padding: 80px 0;
+}
+
+.ppl-all-states {
+  margin-top: 32px;
+  text-align: center;
+}
+
+/* CTA Banner */
+.ppl-cta-banner {
+  background: linear-gradient(135deg, var(--ppl-indigo) 0%, var(--ppl-indigo-dark) 100%);
+  padding: 80px 0;
+  text-align: center;
+}
+
+.ppl-cta-banner__title {
+  font-size: clamp(24px, 3vw, 36px);
+  font-weight: 700;
+  color: var(--ppl-white);
+  margin: 0 0 16px;
+}
+
+.ppl-cta-banner__sub {
+  font-size: 18px;
+  color: rgba(255,255,255,0.85);
+  margin: 0 0 32px;
+}
+
+@media (max-width: 768px) {
+  .ppl-hero--home { padding: 64px 0 56px; }
+  .ppl-hero__actions { flex-direction: column; }
+  .ppl-hero__actions .ppl-btn { text-align: center; }
+  .ppl-steps { flex-direction: column; align-items: center; gap: 32px; }
+  .ppl-step__divider { display: none; }
+  .ppl-step { padding: 0; max-width: 320px; }
+  .ppl-how-it-works { text-align: left; }
+  .ppl-how-it-works .ppl-step__number { margin-left: 0; }
+  .ppl-testimonial-grid { grid-template-columns: 1fr; }
+}
