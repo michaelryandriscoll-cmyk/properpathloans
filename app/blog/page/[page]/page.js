@@ -70,8 +70,8 @@ export async function generateMetadata({ params }) {
   return {
     title:
       pageNum > 1
-        ? `Blog (Page ${pageNum}) | Small Business Capital`
-        : "Blog | Small Business Capital",
+        ? `Blog (Page ${pageNum}) | Proper Path Loans`
+        : "Blog | Proper Path Loans",
     description:
       "Business funding insights, loan program guides, and approval tips for small business owners.",
     alternates: {

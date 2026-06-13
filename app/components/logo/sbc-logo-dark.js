@@ -5,7 +5,7 @@ const LogoNavy = () => (
     viewBox="0 0 220 40"
     fill="none"
     xmlns="http://www.w3.org/2000/svg"
-    aria-label="Small Business Capital"
+    aria-label="Proper Path Loans"
   >
     {/* Icon */}
     <circle cx="20" cy="20" r="18" fill="#00C684" />
@@ -24,7 +24,7 @@ const LogoNavy = () => (
       fontFamily="system-ui, -apple-system, Segoe UI, sans-serif"
       letterSpacing="-0.02em"
     >
-      Small Business Capital
+      Proper Path Loans
     </text>
   </svg>
 );

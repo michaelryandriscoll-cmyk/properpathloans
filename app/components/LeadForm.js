@@ -175,7 +175,7 @@ export default function LeadForm({
 
           <p className="form-tcpa">
             By submitting this form, I agree to receive calls, texts, and emails
-            from Small Business Capital and its lending partners at the number and
+            from Proper Path Loans and its lending partners at the number and
             email provided. Consent is not required to obtain services. Message and
             data rates may apply. Reply STOP to opt out.{" "}
             <a href="/privacy-policy">Privacy Policy</a>

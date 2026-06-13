@@ -195,7 +195,7 @@ const normalizedBestForObjects = Array.isArray(bestFor)
     areaServed: `${city}, ${state}`,
     provider: {
       "@type": "Organization",
-      name: "Small Business Capital",
+      name: "Proper Path Loans",
     },
   };
 

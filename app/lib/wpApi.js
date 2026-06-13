@@ -1,6 +1,6 @@
 // app/lib/wpApi.js
 
-const WP_API_BASE = "https://smallbusiness.capital/wp-json/wp/v2";
+const WP_API_BASE = "https://properpathloans.com/wp-json/wp/v2";
 const WP_GRAPHQL_URL = process.env.WP_GRAPHQL_URL;
 
 /* =========================

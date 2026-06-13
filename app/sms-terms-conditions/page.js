@@ -1,6 +1,6 @@
 ﻿export const metadata = {
-  title: "SMS Terms & Conditions | Small Business Capital",
-  description: "SMS Terms and Conditions for Small Business Capital text message communications.",
+  title: "SMS Terms & Conditions | Proper Path Loans",
+  description: "SMS Terms and Conditions for Proper Path Loans text message communications.",
   alternates: { canonical: "/sms-terms-conditions" },
 };
 
@@ -11,13 +11,13 @@ export default function SmsTermsPage() {
       <p style={{ color: "#6b7280", marginBottom: "32px" }}>Last updated: March 17, 2026</p>
 
       <h2>1. SMS Communication Consent</h2>
-      <p>By submitting your phone number on smallbusiness.capital, you expressly consent to receive SMS text messages from Small Business Capital (operated by Proper Provider Companies LLC) and its lending partners regarding your business funding inquiry.</p>
+      <p>By submitting your phone number on properpathloans.com, you expressly consent to receive SMS text messages from Proper Path Loans (operated by Proper Provider Companies LLC) and its lending partners regarding your business funding inquiry.</p>
 
       <h2>2. Message Frequency</h2>
       <p>Message frequency varies. You may receive messages related to your funding inquiry, application status updates, and follow-up communications. Typical message frequency is 1–5 messages per inquiry.</p>
 
       <h2>3. Message & Data Rates</h2>
-      <p>Message and data rates may apply depending on your mobile carrier and plan. Small Business Capital is not responsible for any charges incurred from your mobile carrier.</p>
+      <p>Message and data rates may apply depending on your mobile carrier and plan. Proper Path Loans is not responsible for any charges incurred from your mobile carrier.</p>
 
       <h2>4. How to Opt Out</h2>
       <p>You may opt out of SMS communications at any time by replying <strong>STOP</strong> to any text message you receive from us. After opting out, you will receive one final confirmation message. No further messages will be sent unless you re-subscribe.</p>
@@ -25,7 +25,7 @@ export default function SmsTermsPage() {
       <h2>5. How to Get Help</h2>
       <p>Reply <strong>HELP</strong> to any message for assistance, or contact us directly:</p>
       <ul>
-        <li><strong>Email:</strong> michael@smallbusiness.capital</li>
+        <li><strong>Email:</strong> michael@properpathloans.com</li>
         <li><strong>Phone:</strong> (888) 900-8979</li>
       </ul>
 
@@ -40,7 +40,7 @@ export default function SmsTermsPage() {
 
       <h2>9. Contact Us</h2>
       <ul>
-        <li><strong>Email:</strong> michael@smallbusiness.capital</li>
+        <li><strong>Email:</strong> michael@properpathloans.com</li>
         <li><strong>Phone:</strong> (888) 900-8979</li>
         <li><strong>Mail:</strong> Proper Provider Companies LLC, 116 Woodcrest Dr, Buffalo, NY 14220</li>
       </ul>

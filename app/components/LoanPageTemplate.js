@@ -202,8 +202,8 @@ export default async function LoanPageTemplate({ slug }) {
     description: heroSubheadline,
     provider: {
       "@type": "FinancialService",
-      name: "Small Business Capital",
-      url: "https://smallbusiness.capital",
+      name: "Proper Path Loans",
+      url: "https://properpathloans.com",
       telephone: "+18889008979",
     },
     amount: {
@@ -218,7 +218,7 @@ export default async function LoanPageTemplate({ slug }) {
       maxValue: 60,
       unitText: "months",
     },
-    url: `https://smallbusiness.capital/loan-programs/${slug}`,
+    url: `https://properpathloans.com/loan-programs/${slug}`,
   };
 
   return (

@@ -54,7 +54,7 @@ export function buildIntro({ cityName, stateName, industry }) {
 /**
  * Full metadata object for Next.js generateMetadata
  */
-export function buildMetadata({ cityName, stateName, industrySlug, industry, baseUrl = "https://smallbusiness.capital", stateSlug, citySlug }) {
+export function buildMetadata({ cityName, stateName, industrySlug, industry, baseUrl = "https://properpathloans.com", stateSlug, citySlug }) {
   const industryLabel = industry?.label || industry?.industry || industrySlug;
   const audience = industry?.audience;
   const stats = industry?.stats || {};

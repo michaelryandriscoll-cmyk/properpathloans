@@ -2,7 +2,7 @@
 
 import stateCityMap from "@/app/lib/stateCityMap";
 
-const BASE_URL = "https://smallbusiness.capital";
+const BASE_URL = "https://properpathloans.com";
 
 // All 28 industry slugs — must match _industryList25.js exactly
 const INDUSTRIES = [

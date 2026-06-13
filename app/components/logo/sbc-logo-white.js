@@ -3,7 +3,7 @@ const LogoWhite = () => (
     viewBox="0 0 250 44"
     className="elite-logo-svg"
     xmlns="http://www.w3.org/2000/svg"
-    aria-label="Small Business Capital"
+    aria-label="Proper Path Loans"
     role="img"
   >
     <text
@@ -16,7 +16,7 @@ const LogoWhite = () => (
       fontFamily="Inter, system-ui, -apple-system, Segoe UI, sans-serif"
       letterSpacing="-0.02em"
     >
-      Small Business Capital
+      Proper Path Loans
     </text>
   </svg>
 );

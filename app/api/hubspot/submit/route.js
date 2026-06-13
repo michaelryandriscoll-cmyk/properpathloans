@@ -70,7 +70,7 @@ export async function POST(req) {
             monthly_revenue: monthly_revenue || "",
             lead_tier: lead_tier || "",
             lender_recommendation: lender_recommendation || "",
-            lead_source_site: "Small Business Capital"
+            lead_source_site: "Proper Path Loans"
           }
         })
       }
@@ -97,7 +97,7 @@ export async function POST(req) {
           "Content-Type": "application/json"
         },
         body: JSON.stringify({
-          from: "leads@smallbusiness.capital",
+          from: "leads@properpathloans.com",
           to: process.env.ALERT_EMAIL,
           subject: `🔥 New Lead [${lead_tier?.toUpperCase() || "?"}]: ${intent_industry || industry || "Unknown"} — ${intent_city || city || "Unknown"}, ${intent_state || state || "Unknown"}`,
           html: `
@@ -138,7 +138,7 @@ export async function POST(req) {
           "Content-Type": "application/json"
         },
         body: JSON.stringify({
-          from: "leads@smallbusiness.capital",
+          from: "leads@properpathloans.com",
           to: process.env.ALERT_SMS_GATEWAY, // 7169034623@txt.att.net
           subject: "", // carriers ignore subject, body is what shows as SMS
           text: smsText

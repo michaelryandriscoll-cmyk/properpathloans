@@ -84,12 +84,12 @@ export async function generateMetadata({ params }) {
 
   if (!cat) {
     return {
-      title: "Category not found | Small Business Capital",
+      title: "Category not found | Proper Path Loans",
       description: "This category does not exist.",
     };
   }
 
-  const title = `${cat.name} Articles | Small Business Capital`;
+  const title = `${cat.name} Articles | Proper Path Loans`;
 
   return {
     title,

@@ -146,16 +146,16 @@ export default async function BlogPostPage({ params }) {
     author: {
       "@type": "Organization",
       name: "Proper Path Loans",
-      url: "https://smallbusiness.capital",
+      url: "https://properpathloans.com",
     },
     publisher: {
       "@type": "Organization",
       name: "Proper Path Loans",
-      url: "https://smallbusiness.capital",
+      url: "https://properpathloans.com",
     },
     mainEntityOfPage: {
       "@type": "WebPage",
-      "@id": `https://smallbusiness.capital/blog/${slug}`,
+      "@id": `https://properpathloans.com/blog/${slug}`,
     },
     ...(featuredUrl && { image: featuredUrl }),
   };
