@@ -1,8 +1,8 @@
 ﻿import { NextRequest, NextResponse } from "next/server";
 
 const ALLOWED_ORIGINS = [
-  "https://smallbusiness.capital",
-  "https://www.smallbusiness.capital",
+  "https://properpathloans.com",
+  "https://www.properpathloans.com",
   "http://localhost:3000",
 ];
 

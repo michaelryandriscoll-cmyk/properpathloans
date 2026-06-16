@@ -1,146 +1,67 @@
-﻿// app/sitemap.js
-
+// app/sitemap.js
 import stateCityMap from "@/app/lib/stateCityMap";
 
 const BASE_URL = "https://properpathloans.com";
 
-// All 28 industry slugs — must match _industryList25.js exactly
-const INDUSTRIES = [
-  "roofing",
-  "trucking",
-  "solar",
-  "restaurants",
-  "retail",
-  "construction",
-  "hvac",
-  "plumbing",
-  "electrician",
-  "cleaning",
-  "landscaping",
-  "auto-repair",
-  "medical",
-  "pharmacy",
-  "fitness",
-  "professional-services",
-  "manufacturing",
-  "wholesale",
-  "real-estate",
-  "food-truck",
-  "childcare",
-  "nonprofit",
-  "franchise",
-  "technology",
-  "ecommerce",
-  "salon-spa",
-  "food-services",
-  "general-contractors",
+const LOAN_TYPES = [
+  "debt-consolidation",
+  "bad-credit",
+  "emergency-loans",
+  "home-improvement",
 ];
-
-// Loan program slugs
-const LOAN_PROGRAMS = [
-  "working-capital-loans",
-  "business-line-of-credit",
-  "equipment-financing",
-  "business-loans-for-bad-credit",
-  "low-credit-score-loans",
-  "merchant-cash-advance",
-  "no-doc-loans",
-  "payroll-funding",
-  "revenue-based-financing",
-  "sba-loans",
-  "startup-business-loans",
-  "term-loans",
-];
-
-// High-value contractor industries get priority boost
-const HIGH_VALUE_INDUSTRIES = new Set([
-  "roofing", "hvac", "plumbing", "electrician",
-  "construction", "general-contractors", "solar",
-]);
 
 export default function sitemap() {
-  const lastModified = new Date().toISOString();
   const urls = [];
 
-  // ── Static pages ──────────────────────────────────────────
+  // Static pages
   const staticPages = [
-    { path: "/", priority: 1.0, changeFrequency: "weekly" },
-    { path: "/state-loans", priority: 0.9, changeFrequency: "weekly" },
-    { path: "/apply", priority: 0.9, changeFrequency: "monthly" },
-    { path: "/loan-programs", priority: 0.8, changeFrequency: "monthly" },
-    { path: "/industries", priority: 0.8, changeFrequency: "monthly" },
-    { path: "/business-services", priority: 0.7, changeFrequency: "monthly" },
-    { path: "/about-us", priority: 0.5, changeFrequency: "yearly" },
-    { path: "/contact", priority: 0.5, changeFrequency: "yearly" },
-    { path: "/blog", priority: 0.6, changeFrequency: "weekly" },
-    { path: "/privacy-policy", priority: 0.3, changeFrequency: "yearly" },
+    "",
+    "/personal-loans",
+    "/get-quote",
+    "/about",
+    "/blog",
+    "/privacy-policy",
+    "/terms-and-conditions",
   ];
 
-  staticPages.forEach(({ path, priority, changeFrequency }) => {
+  for (const page of staticPages) {
     urls.push({
-      url: `${BASE_URL}${path}`,
-      lastModified,
-      changeFrequency,
-      priority,
-    });
-  });
-
-  // ── Loan program pages ────────────────────────────────────
-  LOAN_PROGRAMS.forEach((slug) => {
-    urls.push({
-      url: `${BASE_URL}/loan-programs/${slug}`,
-      lastModified,
+      url: `${BASE_URL}${page}`,
+      lastModified: new Date(),
       changeFrequency: "monthly",
-      priority: 0.8,
+      priority: page === "" ? 1.0 : 0.8,
     });
-  });
+  }
 
-  // ── Industry hub pages ────────────────────────────────────
-  INDUSTRIES.forEach((slug) => {
+  // State pages
+  for (const [stateSlug, stateData] of Object.entries(stateCityMap)) {
     urls.push({
-      url: `${BASE_URL}/industries/${slug}`,
-      lastModified,
+      url: `${BASE_URL}/personal-loans/${stateSlug}`,
+      lastModified: new Date(),
       changeFrequency: "monthly",
       priority: 0.7,
     });
-  });
 
-  // ── State hub pages ───────────────────────────────────────
-  Object.keys(stateCityMap).forEach((stateSlug) => {
-    urls.push({
-      url: `${BASE_URL}/state-loans/${stateSlug}`,
-      lastModified,
-      changeFrequency: "monthly",
-      priority: 0.8,
-    });
-  });
-
-  // ── City pages + industry pages ───────────────────────────
-  Object.keys(stateCityMap).forEach((stateSlug) => {
-    const S = stateCityMap[stateSlug];
-    if (!S?.cities) return;
-
-    S.cities.forEach((city) => {
-      // City hub page
+    // City pages
+    for (const city of stateData.cities) {
       urls.push({
-        url: `${BASE_URL}/state-loans/${stateSlug}/${city.slug}`,
-        lastModified,
+        url: `${BASE_URL}/personal-loans/${stateSlug}/${city.slug}`,
+        lastModified: new Date(),
         changeFrequency: "monthly",
-        priority: 0.7,
+        priority: 0.6,
       });
 
-      // City × industry pages
-      INDUSTRIES.forEach((industry) => {
-        const isHighValue = HIGH_VALUE_INDUSTRIES.has(industry);
+      // Vertical pages
+      for (const loanType of LOAN_TYPES) {
         urls.push({
-          url: `${BASE_URL}/state-loans/${stateSlug}/${city.slug}/industry/${industry}`,
-          lastModified,
+          url: `${BASE_URL}/personal-loans/${stateSlug}/${city.slug}/${loanType}`,
+          lastModified: new Date(),
           changeFrequency: "monthly",
-          priority: isHighValue ? 0.9 : 0.7,
+          priority: 0.5,
         });
-      });
-    });
-  });
+      }
+    }
+  }
 
   return urls;
 }
