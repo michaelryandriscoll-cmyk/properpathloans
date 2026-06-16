@@ -1,7 +1,9 @@
 export const metadata = {
   title: "Check Your Personal Loan Rate | Proper Path Loans",
   description: "Check your personal loan rate in minutes. No credit impact. Compare offers from top lenders for debt consolidation, emergency loans, home improvement, and more.",
-  alternates: { canonical: "https://properpathloans.com/get-quote" },
+  alternates: {
+    canonical: "https://properpathloans.com/get-quote",
+  },
 };
 
 export default function GetQuotePage() {
@@ -24,35 +26,15 @@ export default function GetQuotePage() {
 
       <section className="ppl-quote-body">
         <div className="ppl-container ppl-container--narrow">
-          <div className="ppl-quote-form-card">
-            <h2>Find Your Best Rate</h2>
-            <p className="ppl-quote-form-card__sub">
-              Tell us a little about what you need and we'll match you with the right lenders.
-            </p>
-
-            {/* Lead form will go here — placeholder for now */}
-            <div className="ppl-quote-placeholder">
-              <div className="ppl-quote-steps">
-                <div className="ppl-quote-step-item">
-                  <span className="ppl-quote-step-num">1</span>
-                  <span>Loan amount and purpose</span>
-                </div>
-                <div className="ppl-quote-step-item">
-                  <span className="ppl-quote-step-num">2</span>
-                  <span>Your credit profile</span>
-                </div>
-                <div className="ppl-quote-step-item">
-                  <span className="ppl-quote-step-num">3</span>
-                  <span>Contact information</span>
-                </div>
-              </div>
-              <p className="ppl-quote-coming">
-                Lead form integration coming soon. In the meantime, browse loan options by location:
-              </p>
-              <a href="/personal-loans" className="ppl-btn ppl-btn--primary ppl-btn--large">
-                Browse Personal Loans by State
-              </a>
-            </div>
+          <div className="ppl-iframe-wrapper">
+            <iframe
+              id="application-form"
+              src="https://iframe.global/iframe?style=2&owner=USAIFRAME&tracking_code=aff170633"
+              allowTransparency={true}
+              title="Application Form"
+              scrolling="no"
+              style={{ height: "840px", width: "100%", border: "none" }}
+            />
           </div>
 
           <div className="ppl-quote-trust">

@@ -964,3 +964,19 @@
   .ppl-quote-form-card { padding: 28px 20px; }
   .ppl-quote-trust { grid-template-columns: 1fr; }
 }
+
+/* ─── iFrame ──────────────────────────────────────────── */
+.ppl-iframe-wrapper {
+  width: 100%;
+  max-width: 680px;
+  margin: 0 auto;
+  border-radius: var(--ppl-radius-lg);
+  overflow: hidden;
+  box-shadow: var(--ppl-shadow-lg);
+}
+
+@media (max-width: 768px) {
+  .ppl-iframe-wrapper iframe {
+    height: 1000px !important;
+  }
+}

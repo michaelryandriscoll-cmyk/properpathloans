@@ -143,10 +143,23 @@ export default async function LoanTypeCityPage({ params }) {
           <p className="ppl-section-subtitle">
             Check your personalized rate in minutes. No credit impact, no obligation.
           </p>
-          <div className="ppl-form-placeholder">
-            <a href="/get-quote" className="ppl-btn ppl-btn--primary ppl-btn--large">
-              Get My Personalized Rates
-            </a>
+          <div className="ppl-iframe-wrapper">
+            <iframe
+              id="application-form"
+              src="https://iframe.global/iframe?style=2&owner=USAIFRAME&tracking_code=aff170633"
+              allowTransparency={true}
+              title="Application Form"
+              scrolling="no"
+              style={{ height: "840px", width: "100%", border: "none" }}
+            />
+            <script
+              src="https://iframe.global/embed.js"
+              async
+              defer
+              data-iframe-id="application-form"
+              data-header-offset="64"
+              data-scroll-duration="300"
+            />
           </div>
         </div>
       </section>
