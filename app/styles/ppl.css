@@ -980,3 +980,19 @@
     height: 1000px !important;
   }
 }
+
+/* Sister site nav link */
+.ppl-header__nav-sister {
+  font-size: 0.8rem;
+  color: #a5b4fc;
+  text-decoration: none;
+  opacity: 0.8;
+  border-left: 1px solid rgba(255,255,255,0.15);
+  padding-left: 1rem;
+  margin-left: 0.25rem;
+  white-space: nowrap;
+}
+.ppl-header__nav-sister:hover {
+  opacity: 1;
+  color: #fff;
+}
