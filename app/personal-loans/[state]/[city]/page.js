@@ -110,7 +110,7 @@ export default async function CityPage({ params }) {
           <div className="ppl-iframe-wrapper">
             <iframe
               id="application-form"
-              src="https://iframe.global/iframe?style=2&owner=USAIFRAME&tracking_code=aff170633"
+              src="https://iframe.global/iframe?style=2&owner=USAIFRAME&tracking_code=aff170633&maxloanamount=50k"
               allowTransparency={true}
               title="Application Form"
               scrolling="no"

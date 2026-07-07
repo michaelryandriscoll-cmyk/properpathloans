@@ -32,6 +32,10 @@ const loanTypes = [
       amounts: "$1,000 – $100,000",
       terms: "24 – 84 months",
     },
+    affiliateLink: {
+      url: "https://borrowmoney.us/?aff170631",
+      label: "See Loan Options →",
+    },
   },
   {
     slug: "bad-credit",
@@ -61,6 +65,10 @@ const loanTypes = [
       rates: "9.99% – 35.99% APR",
       amounts: "$500 – $50,000",
       terms: "12 – 60 months",
+    },
+    affiliateLink: {
+      url: "https://lowcreditfinance.com/?aff170630",
+      label: "See Bad Credit Loan Options →",
     },
   },
   {

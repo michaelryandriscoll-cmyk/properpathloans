@@ -198,23 +198,22 @@ export default async function BlogPostPage({ params }) {
 
         {/* Internal Links */}
         <div className="blog-internal-links">
-          <p className="blog-internal-links__label">Explore funding options</p>
+          <p className="blog-internal-links__label">Explore loan options</p>
           <div className="blog-internal-links__grid">
-            <Link href="/loan-programs/working-capital-loans">Working Capital Loans</Link>
-            <Link href="/loan-programs/business-line-of-credit">Business Line of Credit</Link>
-            <Link href="/loan-programs/equipment-financing">Equipment Financing</Link>
-            <Link href="/loan-programs/business-loans-for-bad-credit">Bad Credit Loans</Link>
-            <Link href="/loan-programs/sba-loans">SBA Loans</Link>
-            <Link href="/loan-programs/merchant-cash-advance">Merchant Cash Advance</Link>
+            <Link href="/personal-loans/texas/houston/debt-consolidation">Debt Consolidation Loans</Link>
+            <Link href="/personal-loans/texas/houston/bad-credit">Bad Credit Loans</Link>
+            <Link href="/personal-loans/texas/houston/emergency-loans">Emergency Loans</Link>
+            <Link href="/personal-loans/texas/houston/home-improvement">Home Improvement Loans</Link>
+            <Link href="/personal-loans">Browse All States</Link>
           </div>
         </div>
 
         {/* Footer CTA */}
         <div className="blog-post-cta">
-          <h3>Ready to check your funding options?</h3>
-          <p>Apply once and compare offers — no impact to credit. Takes 2 minutes.</p>
-          <Link href="/apply" className="blog-post-cta-btn">
-            Check My Options <span aria-hidden="true">→</span>
+          <h3>Ready to check your rate?</h3>
+          <p>Compare lenders in minutes — no impact to your credit score.</p>
+          <Link href="/get-quote" className="blog-post-cta-btn">
+            Check My Rate <span aria-hidden="true">→</span>
           </Link>
           <p className="blog-cta-phone">
             Prefer to talk? <a href="tel:18889008979">(888) 900-8979</a>

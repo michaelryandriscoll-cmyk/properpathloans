@@ -996,3 +996,38 @@
   opacity: 1;
   color: #fff;
 }
+
+.ppl-affiliate-link {
+  display: inline-block;
+  margin-top: 1.5rem;
+}
+
+.ppl-btn--secondary {
+  background: transparent;
+  color: var(--ppl-indigo);
+  border: 2px solid var(--ppl-indigo);
+}
+
+.ppl-btn--secondary:hover {
+  background: var(--ppl-indigo);
+  color: var(--ppl-white);
+}
+
+.ppl-affiliate-callout {
+  background: var(--ppl-navy);
+  padding: 56px 0;
+  text-align: center;
+}
+
+.ppl-affiliate-callout__title {
+  color: var(--ppl-white);
+  font-size: 28px;
+  font-weight: 700;
+  margin-bottom: 12px;
+}
+
+.ppl-affiliate-callout__subtitle {
+  color: rgba(255, 255, 255, 0.85);
+  font-size: 17px;
+  margin-bottom: 28px;
+}

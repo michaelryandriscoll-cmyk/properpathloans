@@ -106,6 +106,28 @@ export default async function LoanTypeCityPage({ params }) {
         </div>
       </section>
 
+
+      {/* Affiliate Callout */}
+      {loanType.affiliateLink && (
+        <section className="ppl-affiliate-callout">
+          <div className="ppl-container ppl-container--narrow">
+            <h2 className="ppl-affiliate-callout__title">
+              Ready to See Your Options?
+            </h2>
+            <p className="ppl-affiliate-callout__subtitle">
+              Compare lenders for {loanType.label.toLowerCase()} in {cityName} — no credit impact to check.
+            </p>
+            <a
+              href={loanType.affiliateLink.url}
+              target="_blank"
+              rel="noopener sponsored nofollow"
+              className="ppl-btn ppl-btn--primary ppl-btn--large"
+            >
+              {loanType.affiliateLink.label}
+            </a>
+          </div>
+        </section>
+      )}
       {/* Benefits */}
       <section className="ppl-benefits">
         <div className="ppl-container">
@@ -146,7 +168,7 @@ export default async function LoanTypeCityPage({ params }) {
           <div className="ppl-iframe-wrapper">
             <iframe
               id="application-form"
-              src="https://iframe.global/iframe?style=2&owner=USAIFRAME&tracking_code=aff170633"
+              src="https://iframe.global/iframe?style=2&owner=USAIFRAME&tracking_code=aff170633&maxloanamount=50k"
               allowTransparency={true}
               title="Application Form"
               scrolling="no"
