@@ -969,7 +969,7 @@
 .ppl-iframe-wrapper {
   width: 100%;
   max-width: 680px;
-  margin: 0 auto;
+  margin: 0 auto 32px;
   border-radius: var(--ppl-radius-lg);
   overflow: hidden;
   box-shadow: var(--ppl-shadow-lg);
