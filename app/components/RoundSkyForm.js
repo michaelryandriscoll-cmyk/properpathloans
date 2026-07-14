@@ -15,7 +15,7 @@ const ROUND_SKY_USER_ID = "40qJOtvcVss5QVuBNK2aF6NWtx4uM0IBcYX3089hjPU.";
 function buildSrcDoc({ subId, subId2, subId3 }) {
   const inputOptions = {
     UserID: ROUND_SKY_USER_ID,
-    Style: "STYLE5",
+    Style: "STYLE1",
     FormID: "INSTALLMENT_STEP",
     SubID: subId || "",
     SubID2: subId2 || "",
