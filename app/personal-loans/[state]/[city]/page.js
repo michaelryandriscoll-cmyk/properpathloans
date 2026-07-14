@@ -3,6 +3,7 @@ import { notFound } from "next/navigation";
 import Link from "next/link";
 import stateCityMap from "@/app/lib/stateCityMap.js";
 import loanTypes from "@/app/lib/_loanTypeList.js";
+import RoundSkyForm from "@/app/components/RoundSkyForm";
 
 export const revalidate = 86400;
 export const dynamicParams = true;
@@ -108,22 +109,7 @@ export default async function CityPage({ params }) {
             Answer a few quick questions and we'll match you with the best personal loan options available in {cityName}, {stateName}.
           </p>
           <div className="ppl-iframe-wrapper">
-            <iframe
-              id="application-form"
-              src="https://iframe.global/iframe?style=2&owner=USAIFRAME&tracking_code=aff170633&maxloanamount=50k"
-              allowTransparency={true}
-              title="Application Form"
-              scrolling="no"
-              style={{ height: "840px", width: "100%", border: "none" }}
-            />
-            <script
-              src="https://iframe.global/embed.js"
-              async
-              defer
-              data-iframe-id="application-form"
-              data-header-offset="64"
-              data-scroll-duration="300"
-            />
+            <RoundSkyForm subId={citySlug} subId2={stateSlug} />
           </div>
         </div>
       </section>

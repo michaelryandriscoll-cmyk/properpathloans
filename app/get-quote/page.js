@@ -1,3 +1,5 @@
+import RoundSkyForm from "@/app/components/RoundSkyForm";
+
 export const metadata = {
   title: "Check Your Personal Loan Rate | Proper Path Loans",
   description: "Check your personal loan rate in minutes. No credit impact. Compare offers from top lenders for debt consolidation, emergency loans, home improvement, and more.",
@@ -27,14 +29,7 @@ export default function GetQuotePage() {
       <section className="ppl-quote-body">
         <div className="ppl-container ppl-container--narrow">
           <div className="ppl-iframe-wrapper">
-            <iframe
-              id="application-form"
-              src="https://iframe.global/iframe?style=2&owner=USAIFRAME&tracking_code=aff170633&maxloanamount=50k"
-              allowTransparency={true}
-              title="Application Form"
-              scrolling="no"
-              style={{ height: "840px", width: "100%", border: "none" }}
-            />
+            <RoundSkyForm subId="get-quote" />
           </div>
 
           <div className="ppl-quote-trust">
