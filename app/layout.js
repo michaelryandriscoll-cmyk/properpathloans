@@ -74,10 +74,39 @@ export const metadata = {
   category: "finance",
 };
 
+const organizationJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  name: "Proper Path Loans",
+  legalName: "Proper Provider Companies LLC",
+  url: "https://properpathloans.com",
+  logo: "https://properpathloans.com/favicon-32x32.png",
+  description:
+    "Proper Path Loans connects consumers with a network of personal loan lenders for debt consolidation, bad credit, emergency, and home improvement loans. Not a lender — no fee to borrowers, no hard credit pull to check rates.",
+  address: {
+    "@type": "PostalAddress",
+    streetAddress: "116 Woodcrest Dr",
+    addressLocality: "Buffalo",
+    addressRegion: "NY",
+    postalCode: "14220",
+    addressCountry: "US",
+  },
+  contactPoint: {
+    "@type": "ContactPoint",
+    telephone: "+1-888-900-8979",
+    email: "michael@properpathloans.com",
+    contactType: "customer service",
+  },
+};
+
 export default function RootLayout({ children }) {
   return (
     <html lang="en" className={inter.variable}>
       <body className="ppl-body">
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationJsonLd) }}
+        />
         <LayoutShell>{children}</LayoutShell>
       </body>
     </html>

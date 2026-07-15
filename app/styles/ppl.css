@@ -1056,6 +1056,130 @@
   line-height: 1.6;
 }
 
+/* ─── State page real content ────────────────────────── */
+.ppl-state-context {
+  padding: 40px 0;
+  background: var(--ppl-white);
+}
+
+.ppl-state-context p {
+  color: var(--ppl-text-muted);
+  line-height: 1.7;
+  margin: 0 0 16px;
+}
+
+.ppl-state-context a {
+  color: var(--ppl-indigo);
+  font-weight: 600;
+}
+
+/* ─── Loan Calculator ─────────────────────────────────── */
+.ppl-calc-section {
+  padding: 32px 0 64px;
+}
+
+.ppl-calc {
+  background: var(--ppl-white);
+  border-radius: var(--ppl-radius-lg);
+  box-shadow: var(--ppl-shadow-lg);
+  padding: 32px;
+}
+
+.ppl-calc__inputs {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.ppl-calc__field-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  margin-bottom: 8px;
+}
+
+.ppl-calc__field-header label {
+  font-weight: 600;
+  color: var(--ppl-navy);
+  font-size: 14px;
+}
+
+.ppl-calc__value {
+  font-weight: 700;
+  color: var(--ppl-indigo);
+  font-size: 16px;
+}
+
+.ppl-calc input[type="range"] {
+  width: 100%;
+  accent-color: var(--ppl-indigo);
+}
+
+.ppl-calc__results {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+  margin-top: 32px;
+  padding-top: 24px;
+  border-top: 1px solid var(--ppl-border);
+}
+
+.ppl-calc__result {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.ppl-calc__result-label {
+  font-size: 13px;
+  color: var(--ppl-text-muted);
+}
+
+.ppl-calc__result-value {
+  font-size: 20px;
+  font-weight: 700;
+  color: var(--ppl-navy);
+}
+
+.ppl-calc__result--primary .ppl-calc__result-value {
+  color: var(--ppl-indigo);
+  font-size: 28px;
+}
+
+.ppl-calc__disclaimer {
+  margin: 24px 0 0;
+  font-size: 12px;
+  color: var(--ppl-text-muted);
+  line-height: 1.6;
+}
+
+.ppl-calc-explainer {
+  padding: 0 0 64px;
+}
+
+.ppl-calc-explainer p {
+  color: var(--ppl-text-muted);
+  line-height: 1.7;
+  margin: 0 0 16px;
+}
+
+.ppl-calc-explainer h2 {
+  margin-top: 32px;
+}
+
+.ppl-calc-explainer .ppl-btn {
+  margin-top: 16px;
+}
+
+@media (max-width: 640px) {
+  .ppl-calc__results {
+    grid-template-columns: 1fr;
+  }
+  .ppl-calc {
+    padding: 24px 20px;
+  }
+}
+
 .ppl-btn--secondary:hover {
   background: var(--ppl-indigo);
   color: var(--ppl-white);

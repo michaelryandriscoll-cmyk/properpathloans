@@ -17,6 +17,7 @@ export default function Header() {
           <Link href="/personal-loans">Personal Loans</Link>
           <Link href="/personal-loans/texas/houston/debt-consolidation">Debt Consolidation</Link>
           <Link href="/personal-loans/texas/houston/bad-credit">Bad Credit</Link>
+          <Link href="/personal-loan-calculator">Calculator</Link>
           <Link href="/blog">Blog</Link>
           <a href="https://smallbusiness.capital" className="ppl-header__nav-sister" target="_blank" rel="noopener">Business Loans →</a>
         </nav>
@@ -39,6 +40,7 @@ export default function Header() {
           <Link href="/personal-loans" onClick={() => setMobileOpen(false)}>Personal Loans</Link>
           <Link href="/personal-loans/texas/houston/debt-consolidation" onClick={() => setMobileOpen(false)}>Debt Consolidation</Link>
           <Link href="/personal-loans/texas/houston/bad-credit" onClick={() => setMobileOpen(false)}>Bad Credit Loans</Link>
+          <Link href="/personal-loan-calculator" onClick={() => setMobileOpen(false)}>Calculator</Link>
           <Link href="/blog" onClick={() => setMobileOpen(false)}>Blog</Link>
           <a href="https://smallbusiness.capital" className="ppl-header__nav-sister" target="_blank" rel="noopener" onClick={() => setMobileOpen(false)}>Business Loans →</a>
           <Link href="/get-quote" className="ppl-btn ppl-btn--primary" onClick={() => setMobileOpen(false)}>Check My Rate</Link>
