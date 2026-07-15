@@ -65,8 +65,8 @@ export const metadata = {
     shortcut: "/favicon.ico",
   },
   robots: {
-    index: false,
-    follow: false,
+    index: true,
+    follow: true,
   },
   alternates: {
     canonical: "https://properpathloans.com",

@@ -36,6 +36,24 @@ const loanTypes = [
       url: "https://borrowmoney.us/?aff170631",
       label: "See Loan Options →",
     },
+    faqs: [
+      {
+        q: "How does a debt consolidation loan actually save me money?",
+        a: "It only saves you money if the new loan's interest rate is lower than the average rate on the debts you're rolling in. If your credit cards are running 24%+ APR and you qualify for a consolidation loan in the 7–15% range, you cut the interest cost significantly. If your credit is weak enough that your consolidation loan quote comes back close to or above your card rates, it may not be worth it — compare the actual APRs before signing.",
+      },
+      {
+        q: "Will consolidating hurt my credit score?",
+        a: "Checking your rate uses a soft credit pull, which doesn't affect your score. Taking out the loan itself can cause a small, temporary dip (a new account, a hard inquiry when you formally apply), but paying down revolving credit card balances to zero often helps your credit utilization ratio, which can offset that dip within a few months.",
+      },
+      {
+        q: "What's the difference between this and a balance transfer credit card?",
+        a: "A balance transfer card usually offers 0% APR for a limited promotional period (often 12–18 months), then jumps to a standard card rate. A debt consolidation loan has a fixed rate and a fixed payoff date for the entire term. Balance transfers can be cheaper if you can pay off the balance before the promo ends; a fixed loan is more predictable if you need longer than that to pay it off.",
+      },
+      {
+        q: "Can I keep using my credit cards after I consolidate?",
+        a: "You can, but it defeats the purpose. If you consolidate card balances into a loan and then run the cards back up, you end up with both the loan payment and new card debt. Most people who consolidate successfully either close or stop using the paid-off cards until the loan is repaid.",
+      },
+    ],
   },
   {
     slug: "bad-credit",
@@ -70,6 +88,28 @@ const loanTypes = [
       url: "https://lowcreditfinance.com/?aff170630",
       label: "See Bad Credit Loan Options →",
     },
+    faqs: [
+      {
+        q: "What credit score actually counts as \"bad credit\" for a personal loan?",
+        a: "Lenders generally treat scores below 640 as subprime, with scores under 580 considered deep subprime. That said, bad-credit lenders in our network look at more than the number — income stability, employment history, and existing debt load all factor into approval and rate.",
+      },
+      {
+        q: "Can I get approved with a score below 600?",
+        a: "It's possible, but expect a higher APR to offset the lender's risk, and a smaller loan amount than someone with prime credit would qualify for. Some lenders in our network work with scores as low as 560; others set a higher floor. Checking your rate shows you which lenders are actually willing to work with your specific score.",
+      },
+      {
+        q: "Will applying hurt my already-low credit score?",
+        a: "Checking your rate through our form uses a soft credit pull, which does not affect your score. A hard inquiry only happens if you move forward and formally apply with a specific lender, and even then the impact is typically small and temporary.",
+      },
+      {
+        q: "What if I've had a bankruptcy or collections on my record?",
+        a: "A past bankruptcy or collection account doesn't automatically disqualify you, especially if it's aged and your recent payment history is stable. Lenders weigh how long ago it happened and what your credit looks like since then. Some specialize specifically in post-bankruptcy borrowers.",
+      },
+      {
+        q: "Are bad credit loans more expensive than regular personal loans?",
+        a: "Yes — rate is tied to risk, so lower credit scores mean higher APRs, generally in the 20–36% range versus single digits for prime borrowers. It's still usually cheaper than a payday loan or title loan, but compare the total cost against other options (like a secured card or credit union loan) before committing.",
+      },
+    ],
   },
   {
     slug: "emergency-loans",
@@ -100,6 +140,24 @@ const loanTypes = [
       amounts: "$250 – $35,000",
       terms: "3 – 60 months",
     },
+    faqs: [
+      {
+        q: "How fast can I actually get the money?",
+        a: "Some lenders in our network fund as fast as the same or next business day after approval, but that depends on when you apply, how quickly you submit any documents they request, and your bank's own deposit processing time. If a specific timeline matters, confirm it directly with the lender before accepting an offer.",
+      },
+      {
+        q: "What can an emergency loan actually be used for?",
+        a: "Anything — unlike some financing (a car loan, a mortgage), a personal loan has no restriction on use. Common reasons include car repairs, medical bills, funeral costs, or covering a gap after a job loss. The lender doesn't require you to justify the specific expense.",
+      },
+      {
+        q: "Do I need good credit to qualify for an emergency loan?",
+        a: "No — our network includes lenders who work across the credit spectrum, including subprime borrowers. Your credit profile affects your rate and the amount you're offered, but it doesn't automatically disqualify you the way it might with a traditional bank loan.",
+      },
+      {
+        q: "Is there anything faster than a next-business-day loan?",
+        a: "If you truly need money same-day, options are limited to whichever lenders in your state offer instant or same-day funding, which isn't universal. Payday and title loans fund faster but carry much higher costs and shorter repayment windows — worth understanding the tradeoff before choosing speed over cost.",
+      },
+    ],
   },
   {
     slug: "home-improvement",
@@ -130,6 +188,24 @@ const loanTypes = [
       amounts: "$1,000 – $100,000",
       terms: "24 – 84 months",
     },
+    faqs: [
+      {
+        q: "How is this different from a HELOC?",
+        a: "A HELOC borrows against your home equity, requires an appraisal, and puts your home up as collateral. A personal home improvement loan is unsecured — no equity or appraisal required, and it doesn't put your house at risk if you can't pay. The tradeoff is usually a higher interest rate than a HELOC, since the lender has less security.",
+      },
+      {
+        q: "Do I need to own my home outright, or have a lot of equity, to qualify?",
+        a: "No — since these loans aren't secured by your home, your equity position doesn't factor into approval. Lenders look at your income, credit, and existing debt instead, the same as any other personal loan.",
+      },
+      {
+        q: "Do I need to provide contractor quotes or receipts to qualify?",
+        a: "Generally no. Most lenders don't require proof of how the funds will be spent, so you can apply before you've finalized a contractor or gotten a quote. That said, having a rough project budget in mind helps you request the right loan amount.",
+      },
+      {
+        q: "Is the interest tax-deductible like a HELOC?",
+        a: "Generally no. HELOC interest can be tax-deductible when the funds are used for home improvement, under current IRS rules. Personal loan interest is typically not deductible regardless of what it's used for. Talk to a tax professional about your specific situation before assuming either way.",
+      },
+    ],
   },
 ];
 

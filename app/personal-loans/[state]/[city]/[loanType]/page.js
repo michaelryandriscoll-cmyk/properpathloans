@@ -4,6 +4,7 @@ import Link from "next/link";
 import stateCityMap from "@/app/lib/stateCityMap.js";
 import loanTypes from "@/app/lib/_loanTypeList.js";
 import RoundSkyForm from "@/app/components/RoundSkyForm";
+import LoanTypeFAQ from "@/app/components/LoanTypeFAQ";
 
 export const revalidate = 86400;
 export const dynamicParams = true;
@@ -171,6 +172,9 @@ export default async function LoanTypeCityPage({ params }) {
           </div>
         </div>
       </section>
+
+      {/* FAQ */}
+      <LoanTypeFAQ faqs={loanType.faqs} label={loanType.label} />
 
       {/* Other Loan Types */}
       <section className="ppl-other-types">
